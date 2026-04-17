@@ -5,7 +5,6 @@
 
 <!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=carlosabdoamaral" alt="carlosabdoamaral" /></a> </p> -->
 
-- 🔭 I’m currently working on **a startup for software development**
 - 🌱 I’m currently learning **Swift/SwiftUI and Kotlin**
 - 📫 How to reach me **Carlosabdoamaral@gmail.com**
 - 📄 Know about my experiences [https://www.linkedin.com/in/carlos-alberto-barcelos-do-amaral-56a6881b3/](https://www.linkedin.com/in/carlos-alberto-barcelos-do-amaral-56a6881b3/)
