@@ -1,0 +1,188 @@
+<nav class="navbar">
+  <span>{{ autor().name }}</span>
+</nav>
+
+<section class="hero">
+  <div class="hero__background"></div>
+
+  <div class="hero__particles"></div>
+
+  <div class="hero__container">
+    <div class="hero__content">
+      <span class="hero__eyebrow"> Por um mensageiro </span>
+
+      <h1 class="hero__title">{{ featuredBook()?.title }}</h1>
+
+      <p class="hero__subtitle">
+        {{ featuredBook()?.description }}
+      </p>
+
+      <div class="hero__actions">
+        <button
+          class="hero__button hero__button--primary"
+          type="button"
+          (click)="openLink(featuredBook()?.linkFisico!)"
+        >
+          {{ featuredBook()?.buttonLabel }}
+        </button>
+
+        <button
+          class="hero__button hero__button--secondary"
+          type="button"
+          (click)="scrollToAuthor()"
+        >
+          Conhecer o autor
+        </button>
+      </div>
+
+      <div class="hero__quote">“Algumas almas escrevem histórias. Outras escrevem esperança.”</div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="book">
+        <div class="book__glow"></div>
+
+        <app-book-object
+          [image]="featuredBook()?.cover!"
+          [title]="featuredBook()?.title!"
+        ></app-book-object>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="banner__overlay"></div>
+
+  <div class="banner__content">
+    <span class="banner__label"> Literatura contemplativa </span>
+
+    <h2 class="banner__title">Cartas escritas para tocar almas, não apenas páginas.</h2>
+
+    <p class="banner__description">
+      Carlos Alberto Barcelos do Amaral une espiritualidade, sensibilidade humana e profundidade
+      emocional em experiências literárias silenciosas e acolhedoras.
+    </p>
+
+    <div class="banner__actions">
+      <button class="banner__button" type="button" (click)="scrollToBooks()">
+        Conhecer os livros
+      </button>
+
+      <button class="banner__button banner__button--ghost" type="button" (click)="scrollToAuthor()">
+        Sobre o autor
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="books" class="books">
+  <div class="section-header">
+    <span class="section-header__eyebrow"> Obras Publicadas </span>
+
+    <h2 class="section-header__title">Livros que tocaram almas</h2>
+  </div>
+
+  <div class="books__grid">
+    @for (book of books(); track book.title) {
+      <article class="book-card">
+        <div class="book-card__image-wrapper">
+          <img
+            class="book-card__image"
+            [src]="book.cover"
+            [alt]="book.title"
+            width="420"
+            height="620"
+          />
+        </div>
+
+        <div class="book-card__content">
+          <span class="book-card__category">
+            {{ book.category }}
+          </span>
+
+          <h3 class="book-card__title">
+            {{ book.title }}
+          </h3>
+
+          <p class="book-card__description">
+            {{ book.description }}
+          </p>
+
+          <div class="book-card__kinds">
+            <p class="book-card__kinds_cta">Como você prefere ler?</p>
+            <div class="book-card__kinds_list">
+              @if (!!book.linkFisico) {
+                <a
+                  class="book-card__button"
+                  [href]="book.linkFisico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [aria-label]="'Adquirir livro ' + book.title"
+                >
+                  Livro físico
+                </a>
+              }
+
+              @if (!!book.linkDigital) {
+                <a
+                  class="book-card__button"
+                  [href]="book.linkDigital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [aria-label]="'Adquirir livro ' + book.title"
+                >
+                  Livro digital
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+<section id="author" class="author">
+  <div class="author__content">
+    <span class="author__eyebrow"> Sobre o autor </span>
+
+    <h2 class="author__title">
+      {{ autor().name }}
+    </h2>
+
+    <p class="author__text">
+      {{ autor().bio }}
+    </p>
+
+    <div class="author__tags">
+      @for (tag of autor().tags; track tag) {
+        <span>{{ tag }}</span>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="inspirations">
+  <div class="section-header">
+    <span class="section-header__eyebrow"> Inspirações </span>
+
+    <h2 class="section-header__title">Ecos da literatura contemplativa</h2>
+  </div>
+
+  <div class="inspirations__grid">
+    @for (inspiration of inspirations(); track inspiration.title) {
+      <article class="inspiration-card">
+        <h3>{{ inspiration.title }}</h3>
+
+        <p>{{ inspiration.quote }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Carlos Alberto Barcelos do Amaral</p>
+
+  <span> Cartas, reflexões e esperança. </span>
+</footer>

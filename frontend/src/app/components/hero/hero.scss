@@ -1,0 +1,488 @@
+:host {
+  display: block;
+  background: radial-gradient(circle at top, rgba(216, 195, 165, 0.12), transparent 40%), #0b1c2c;
+  color: #f5f1ea;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  background-color: rgba(25, 25, 25, 0.048);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 50;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: #d8c3a5;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+
+  /* Opcional: Adiciona uma sombra sutil embaixo da navbar */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(11, 28, 44, 0.75), rgba(11, 28, 44, 0.98)),
+    url('/assets/textures/paper-texture.webp');
+  opacity: 0.25;
+}
+
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.4;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  padding: 0.45rem 1rem;
+  border: 1px solid rgba(216, 195, 165, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+
+  color: #d8c3a5;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin-top: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(4rem, 9vw, 7rem);
+  line-height: 0.95;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.hero__subtitle {
+  margin-top: 2rem;
+  max-width: 640px;
+
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: rgba(245, 241, 234, 0.78);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.hero__button {
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  padding: 1rem 1.6rem;
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.hero__button--primary {
+  background: #d8c3a5;
+  color: #0b1c2c;
+}
+
+.hero__button--primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(216, 195, 165, 0.18);
+}
+
+.hero__button--secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f5f1ea;
+  backdrop-filter: blur(12px);
+}
+
+.hero__button--secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero__quote {
+  margin-top: 3rem;
+  padding-left: 1rem;
+
+  border-left: 2px solid rgba(216, 195, 165, 0.4);
+
+  color: rgba(245, 241, 234, 0.65);
+
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.book {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(-16deg) rotateX(6deg);
+  transition: 0.6s ease;
+}
+
+.book:hover {
+  transform: rotateY(-10deg) rotateX(4deg) translateY(-8px);
+}
+
+.book__glow {
+  position: absolute;
+  inset: 0;
+  filter: blur(60px);
+  background: rgba(216, 195, 165, 0.18);
+}
+
+.book__image {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 1.5rem;
+
+  box-shadow:
+    0 50px 120px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(216, 195, 165, 0.08);
+}
+
+.banner {
+  position: relative;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.banner__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+}
+
+.banner__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.banner__label {
+  color: #d8c3a5;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+}
+
+.banner__title {
+  margin-top: 2rem;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.1;
+}
+
+.banner__description {
+  margin-top: 2rem;
+
+  color: rgba(245, 241, 234, 0.7);
+  line-height: 1.9;
+  font-size: 1.1rem;
+}
+
+.banner__actions {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.banner__button {
+  border: none;
+  cursor: pointer;
+
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+
+  background: #d8c3a5;
+  color: #0b1c2c;
+  font-weight: 600;
+}
+
+.banner__button--ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f5f1ea;
+}
+
+.books,
+.inspirations,
+.author {
+  padding: 8rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header__eyebrow {
+  color: #d8c3a5;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+}
+
+.section-header__title {
+  margin-top: 1rem;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.books__grid,
+.inspirations__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.book-card,
+.inspiration-card {
+  border-radius: 2rem;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(14px);
+
+  overflow: hidden;
+
+  transition: 0.5s ease;
+}
+
+.book-card:hover,
+.inspiration-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(216, 195, 165, 0.2);
+}
+
+.book-card__image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1.414;
+}
+
+.book-card__content {
+  padding: 2rem;
+}
+
+.book-card__category {
+  color: #d8c3a5;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.book-card__title {
+  margin-top: 1rem;
+
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.book-card__description {
+  margin-top: 1rem;
+
+  color: rgba(245, 241, 234, 0.72);
+  line-height: 1.8;
+}
+
+.book-card__kinds {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin-top: 25px;
+  margin-bottom: -10px;
+
+  .book-card__kinds_cta {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  .book-card__kinds_list {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: -10px;
+
+    .book-card__button {
+      display: inline-flex;
+      margin-top: 2rem;
+
+      padding: 1rem 1.4rem;
+      border-radius: 999px;
+
+      border: 1px solid #d8c3a5;
+      color: #d8c3a5;
+
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .book-card__button:hover {
+      background: #d8c3a5;
+      color: #0b1c2c;
+    }
+  }
+}
+
+.author {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.author__eyebrow {
+  color: #d8c3a5;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.author__title {
+  margin-top: 1rem;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.author__text {
+  margin-top: 2rem;
+
+  color: rgba(245, 241, 234, 0.74);
+  line-height: 2;
+  font-size: 1.08rem;
+}
+
+.author__tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  margin-top: 3rem;
+}
+
+.author__tags span {
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #d8c3a5;
+}
+
+.inspiration-card {
+  padding: 2rem;
+}
+
+.inspiration-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+}
+
+.inspiration-card p {
+  margin-top: 1rem;
+
+  color: rgba(245, 241, 234, 0.7);
+  line-height: 1.8;
+}
+
+.footer {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: rgba(245, 241, 234, 0.55);
+}
+
+.footer span {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .hero__container,
+  .books__grid,
+  .inspirations__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .hero {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__actions,
+  .banner__actions {
+    flex-direction: column;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .banner__title {
+    font-size: 3rem;
+  }
+}
