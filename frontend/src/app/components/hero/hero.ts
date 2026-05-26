@@ -51,8 +51,8 @@ export class HeroComponent {
       cover: 'assets/books/cartas-para-deus.png',
       featured: true,
       buttonLabel: 'Ler agora',
-      linkFisico: "https://pay.hotmart.com/W105987188Q",
-      linkDigital: "https://pay.hotmart.com/U105959798T",
+      linkFisico: 'https://pay.hotmart.com/W105987188Q',
+      linkDigital: 'https://pay.hotmart.com/U105959798T',
     },
     {
       title: 'Anotações que fiz no silêncio da minha alma',
@@ -63,7 +63,8 @@ export class HeroComponent {
       buttonLabel: 'Ler agora',
       linkFisico:
         'https://www.amazon.com/-/pt/dp/B0G4C8V1JS/ref=sr_1_1?crid=16TNJD5R71Z6N&dib=eyJ2IjoiMSJ9.st6GZPpaPrV2bV_g_-GR2rT-fTVINf9f0N111wCevBj2JUJudOnWfOAWTiT6X42cMw03THEaMQKMMFh5QFj4ckOHaMmNMjwYMMX0QwHiNNy8egCIET_40pX4B9vff1TAc47PHowA0Lml_djpcH1q9G20jYYBxQnlbH5Xlm0_v8oGWqdIL9ch3P9AsoM_cRYZ3m9YsR2NGHmfa2h9pbniIo_yOgV08XhMc7Kf_dUdxSs.3tj1K4SkF7_45zuJU1AG4LP7LIrYYNyj0CQMAbHH3ts&dib_tag=se&keywords=no+silencio+da+minha+alma&qid=1779805340&s=digital-text&sprefix=%2Cdigital-text%2C204&sr=1-1',
-      linkDigital: 'https://www.amazon.com/-/pt/dp/B0G4C8V1JS/ref=sr_1_1?crid=16TNJD5R71Z6N&dib=eyJ2IjoiMSJ9.st6GZPpaPrV2bV_g_-GR2rT-fTVINf9f0N111wCevBj2JUJudOnWfOAWTiT6X42cMw03THEaMQKMMFh5QFj4ckOHaMmNMjwYMMX0QwHiNNy8egCIET_40pX4B9vff1TAc47PHowA0Lml_djpcH1q9G20jYYBxQnlbH5Xlm0_v8oGWqdIL9ch3P9AsoM_cRYZ3m9YsR2NGHmfa2h9pbniIo_yOgV08XhMc7Kf_dUdxSs.3tj1K4SkF7_45zuJU1AG4LP7LIrYYNyj0CQMAbHH3ts&dib_tag=se&keywords=no+silencio+da+minha+alma&qid=1779805340&s=digital-text&sprefix=%2Cdigital-text%2C204&sr=1-1',
+      linkDigital:
+        'https://www.amazon.com/-/pt/dp/B0G4C8V1JS/ref=sr_1_1?crid=16TNJD5R71Z6N&dib=eyJ2IjoiMSJ9.st6GZPpaPrV2bV_g_-GR2rT-fTVINf9f0N111wCevBj2JUJudOnWfOAWTiT6X42cMw03THEaMQKMMFh5QFj4ckOHaMmNMjwYMMX0QwHiNNy8egCIET_40pX4B9vff1TAc47PHowA0Lml_djpcH1q9G20jYYBxQnlbH5Xlm0_v8oGWqdIL9ch3P9AsoM_cRYZ3m9YsR2NGHmfa2h9pbniIo_yOgV08XhMc7Kf_dUdxSs.3tj1K4SkF7_45zuJU1AG4LP7LIrYYNyj0CQMAbHH3ts&dib_tag=se&keywords=no+silencio+da+minha+alma&qid=1779805340&s=digital-text&sprefix=%2Cdigital-text%2C204&sr=1-1',
     },
     {
       title: 'Além da Corrida',
@@ -88,7 +89,14 @@ export class HeroComponent {
       presença, escuta e luz em meio aos silêncios
       mais profundos da vida.`,
     photo: 'assets/author/carlos.jpg',
-    tags: ['Programador', 'Catequista', 'Mensageiro', 'Escritor cristão'],
+    tags: [
+      'Católico',
+      'Catequista',
+      'Mensageiro',
+      'Escritor cristão',
+      'Franciscano',
+      'Entre outros',
+    ],
     socialLinks: [
       {
         platform: 'Instagram',

@@ -147,6 +147,10 @@
   <div class="author__content">
     <span class="author__eyebrow"> Sobre o autor </span>
 
+    <div class="author__image">
+      <img [src]="autor().photo" [alt]="autor().name" width="300" height="300" />
+    </div>
+
     <h2 class="author__title">
       {{ autor().name }}
     </h2>

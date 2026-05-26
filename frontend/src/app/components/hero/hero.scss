@@ -381,49 +381,92 @@
   }
 }
 
+/* =========================================
+   SEÇÃO: AUTHOR
+   ========================================= */
+
 .author {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 8rem 2rem;
+}
+
+.author__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .author__eyebrow {
   color: #d8c3a5;
   text-transform: uppercase;
   letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  display: block;
+}
+
+.author__image {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.author__image img {
+  border-radius: 50%;
+  border: 4px solid #d8c3a5; /* Borda bege/dourada da imagem */
+  object-fit: cover;
+  box-shadow: 0 0 60px rgba(216, 195, 165, 0.15); /* Brilho suave de fundo */
+  
+  /* Garante que a imagem mantenha a proporção circular perfeita */
+  width: 250px; 
+  height: 250px;
 }
 
 .author__title {
-  margin-top: 1rem;
-
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1.5rem;
+  color: #f5f1ea;
 }
 
 .author__text {
-  margin-top: 2rem;
-
   color: rgba(245, 241, 234, 0.74);
-  line-height: 2;
-  font-size: 1.08rem;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  max-width: 760px; /* Limita a largura do texto para ficar igual à imagem */
+  margin: 0 auto;
 }
 
 .author__tags {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-
+  justify-content: center; /* Centraliza as pílulas */
   margin-top: 3rem;
+  max-width: 800px;
 }
 
 .author__tags span {
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 999px;
+  
+  /* Cores invertidas em relação ao original para bater com o design da imagem */
+  background: #f5f1ea; 
+  color: #0b1c2c; 
+  
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: default;
+}
 
-  background: rgba(255, 255, 255, 0.05);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  color: #d8c3a5;
+.author__tags span:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(245, 241, 234, 0.15);
 }
 
 .inspiration-card {
