@@ -1,21 +1,43 @@
-<h1 align="center">Hi 👋, I'm Carlos Amaral</h1>
-<h3 align="center">Fullstack developer</h3>
+<h1 align="center">Hi 👋, <br/> I'm Carlos Amaral</h1>
+<h3 align="center">Software Engineer | Fullstack Developer | Data Science & AI Enthusiast</h3>
 
-<!-- <p align="left"> <img src="https://komarev.com/ghpvc/?username=carlosabdoamaral&label=Profile%20views&color=0e75b6&style=flat" alt="carlosabdoamaral" /> </p> -->
-
-<!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=carlosabdoamaral" alt="carlosabdoamaral" /></a> </p> -->
-
-- 🌱 I’m currently learning **Swift/SwiftUI and Kotlin**
-- 📫 How to reach me **Carlosabdoamaral@gmail.com**
-- 📄 Know about my experiences [https://www.linkedin.com/in/carlos-alberto-barcelos-do-amaral-56a6881b3/](https://www.linkedin.com/in/carlos-alberto-barcelos-do-amaral-56a6881b3/)
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/carlos alberto barcelos do amaral" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="carlos alberto barcelos do amaral" height="30" width="40" /></a>
+<p align="center">
+  Passionate developer focused on software architecture, artificial intelligence, and creating scalable solutions. With a strong foundation in web and mobile development, I am always seeking to build high-impact applications.
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=carlosabdoamaral&show_icons=true&locale=en&layout=compact" alt="carlosabdoamaral" /></p>
+---
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=carlosabdoamaral&show_icons=true&locale=en" alt="carlosabdoamaral" /></p>
+### 👨‍💻 About me
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosabdoamaral&" alt="carlosabdoamaral" /></p>
+- 🎓 Postgraduated in **Data Science and Artificial Intelligence** and hold a degree in Systems Analysis and Development.
+- 💼 Solid experience in Fullstack development, working mainly with **Java (Spring Boot), TypeScript (Angular), and Python**.
+- 📱 Experience building mobile applications with **Dart (Flutter)** and native development with **Swift/SwiftUI and SwiftData**.
+- 🏗️ Strong focus on **Clean Architecture**, Design Patterns, and AI integration into software products.
+- 🌱 Currently focusing my studies on infrastructure for Artificial Intelligence agents, Machine Learning, and enhancing applications within the Apple ecosystem.
+- 📍 Florianópolis, SC - Brazil.
+- 📫 Get in touch: **carlosabdoamaral@gmail.com**
+
+---
+
+### 🛠️ Technologies and Tools
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <br>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+</p>
+
+---
+
+### 🤝 Connect with me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/carlosabdoamaral/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Carlos Amaral" />
+  </a>
+</p>

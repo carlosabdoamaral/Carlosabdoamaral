@@ -100,19 +100,19 @@ export class HeroComponent {
     socialLinks: [
       {
         platform: 'Instagram',
-        url: 'https://instagram.com/joaosilva',
+        url: 'http://instagram.com/carlosamaral._',
       },
       {
         platform: 'Youtube',
-        url: 'https://youtube.com/joaosilva',
+        url: 'https://www.youtube.com/@carlosabdoamaral',
       },
       {
         platform: 'TikTok',
-        url: 'https://tiktok.com/@joaosilva',
+        url: 'https://www.tiktok.com/@carlosamaral._',
       },
       {
         platform: 'LinkedIn',
-        url: 'https://linkedin.com/in/joaosilva',
+        url: 'https://www.linkedin.com/in/carlosabdoamaral/',
       },
     ],
   });

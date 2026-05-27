@@ -13,7 +13,7 @@
 
       <h1 class="hero__title">{{ featuredBook()?.title }}</h1>
 
-      <p class="hero__subtitle">
+      <p class="hero__subtitle mb-justify">
         {{ featuredBook()?.description }}
       </p>
 
@@ -59,7 +59,7 @@
 
     <h2 class="banner__title">Cartas escritas para tocar almas, não apenas páginas.</h2>
 
-    <p class="banner__description">
+    <p class="banner__description mb-justify">
       Carlos Alberto Barcelos do Amaral une espiritualidade, sensibilidade humana e profundidade
       emocional em experiências literárias silenciosas e acolhedoras.
     </p>
@@ -105,7 +105,7 @@
             {{ book.title }}
           </h3>
 
-          <p class="book-card__description">
+          <p class="book-card__description mb-justify">
             {{ book.description }}
           </p>
 
@@ -145,25 +145,48 @@
 
 <section id="author" class="author">
   <div class="author__content">
-    <span class="author__eyebrow"> Sobre o autor </span>
+    
+    <span class="author__eyebrow">Sobre o autor</span>
 
     <div class="author__image">
-      <img [src]="autor().photo" [alt]="autor().name" width="300" height="300" />
+      <img 
+        [src]="autor().photo" 
+        [alt]="autor().name" 
+        width="300" 
+        height="300" 
+        loading="lazy" 
+      />
     </div>
 
     <h2 class="author__title">
       {{ autor().name }}
     </h2>
 
-    <p class="author__text">
-      {{ autor().bio }}
-    </p>
-
     <div class="author__tags">
       @for (tag of autor().tags; track tag) {
         <span>{{ tag }}</span>
       }
     </div>
+
+    <p class="author__text mb-justify">
+      {{ autor().bio }}
+    </p>
+
+    <div class="author__links">
+      @for (item of autor().socialLinks; track $index) {
+        <a
+          class="author__link"
+          [href]="item.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ item.platform }} de {{ autor().name }}"
+        >
+          <img src="/assets/icons/link_ic.svg" [alt]="item.platform + ' icon'" width="24" height="24" />
+          <span>{{ item.platform }}</span>
+        </a>
+      }
+    </div>
+
   </div>
 </section>
 
